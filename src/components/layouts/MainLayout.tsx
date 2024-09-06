@@ -10,7 +10,7 @@ const MainLayout: FC<MainLayoutProps> = ({ children }) => {
   return (
     <div>
       <Header />
-      <main className="bg-primary-black text-white px-6 sm:px-12 py-8 sm:py-14 lg:py-20">
+      <main className="px-6 py-8 text-white bg-primary-black sm:px-12 sm:py-14 lg:py-20">
         {children}
       </main>
       <Footer />

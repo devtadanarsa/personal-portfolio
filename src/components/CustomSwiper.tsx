@@ -53,10 +53,10 @@ export default function CustomSlider() {
   };
 
   return (
-    <div>
+    <div className="mt-8">
       {/* Dots indicator */}
-      <div className="w-full flex items-center justify-center">
-        <div className="flex items-center gap-4 justify-center w-[80%] mb-12">
+      <div className="items-center justify-center hidden w-full sm:flex">
+        <div className="flex items-center gap-4 justify-center w-full lg:w-[80%] mb-12">
           {slides.map((_, index) => (
             <div
               key={index}
@@ -67,8 +67,8 @@ export default function CustomSlider() {
       </div>
 
       {/* Slides */}
-      <div className="w-full flex items-center justify-center ">
-        <div className="flex w-[80%] justify-center overflow-hidden space-x-4">
+      <div className="flex items-center justify-center w-full mt-12 sm:mt-0">
+        <div className="flex w-full lg:w-[80%] justify-center overflow-hidden space-x-4">
           {slides.map((slide, index) => (
             <div
               key={slide.id}
@@ -76,11 +76,13 @@ export default function CustomSlider() {
                 index === currentIndex
                   ? "w-full md:w-1/3"
                   : "hidden md:flex md:w-1/3"
-              } text-white text-center py-16 px-24 ${getSlideClass(index)}`}
+              } text-white text-center py-12 px-14 lg:px-20 ${getSlideClass(
+                index
+              )}`}
               style={{ backgroundColor: "rgba(123, 104, 238, 0.10)" }}
             >
               <img src={slide.image} alt={slide.content} />
-              <p className="text-sm sm:text-lg font-medium text-primary-lavender">
+              <p className="text-lg font-medium text-primary-lavender">
                 {slide.content}
               </p>
             </div>
@@ -89,7 +91,7 @@ export default function CustomSlider() {
       </div>
 
       {/* Navigation and dots */}
-      <div className="flex items-center gap-4 justify-center mt-16">
+      <div className="flex items-center justify-center gap-4 mt-16">
         <FaAngleLeft onClick={handlePrev} className="text-xl cursor-pointer" />
         {slides.map((_, index) => (
           <div
