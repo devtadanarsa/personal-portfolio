@@ -12,6 +12,7 @@ export default {
         'secondary-lavender': '#8368FF',
         'primary-black': '#0C0C0C',
         'secondary-black': '#0F0F0F',
+        'third-black': '#131313',
         'primary-gray': '#707070',
         'secondary-gray': '#999999',
       }
