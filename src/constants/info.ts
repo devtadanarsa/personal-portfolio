@@ -9,3 +9,22 @@ export const PROFILE_DESCRIPTION_TWO = `Recently, I have also been develop my sk
     During my leisure time, you'll find me honing my problem- solving skills on LeetCode 
     and participating in Competitive Programming challenges.
     `;
+
+export const STATS = [
+  {
+    title: "Client Orders",
+    value: "11+",
+  },
+  {
+    title: "Completed Projects",
+    value: "09",
+  },
+  {
+    title: "Stars Rating",
+    value: "4.8",
+  },
+  {
+    title: "Months of Experience",
+    value: "12",
+  },
+];
