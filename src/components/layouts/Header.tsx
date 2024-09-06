@@ -7,7 +7,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   return (
-    <header className="sticky top-0">
+    <header className="sticky top">
       <div className="bg-secondary-black flex justify-between items-center py-6 sm:py-8 lg:py-12 font-medium text-white px-6 sm:px-12 lg:px-24">
         <p className="text-lg sm:text-2xl">
           <span className="text-primary-lavender">Devta</span>Dev

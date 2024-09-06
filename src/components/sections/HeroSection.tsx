@@ -5,7 +5,7 @@ import {
 } from "../../constants/info";
 import { SOCIALS } from "../../constants/contact";
 
-const Hero = () => {
+const HeroSection = () => {
   return (
     <section className=" text-white lg:flex gap-32 mx-2 lg:mx-16">
       <div className="space-y-3 sm:space-y-6 lg:w-1/2">
@@ -80,4 +80,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroSection;

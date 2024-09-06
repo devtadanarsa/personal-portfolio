@@ -1,11 +1,13 @@
 import MainLayout from "../components/layouts/MainLayout";
-import Hero from "../components/sections/Hero";
+import HeroSection from "../components/sections/HeroSection";
+import ServicesSection from "../components/sections/ServicesSection";
 
 const HomePage = () => {
   return (
     <div>
       <MainLayout>
-        <Hero />
+        <HeroSection />
+        <ServicesSection />
       </MainLayout>
     </div>
   );
