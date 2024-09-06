@@ -1,9 +1,12 @@
 import MainLayout from "../components/layouts/MainLayout";
+import Hero from "../components/sections/Hero";
 
 const HomePage = () => {
   return (
     <div>
-      <MainLayout>Main Page</MainLayout>
+      <MainLayout>
+        <Hero />
+      </MainLayout>
     </div>
   );
 };

@@ -2,7 +2,7 @@ import { CONTACTS } from "../../constants/contact";
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary-black flex gap-10 justify-between py-8 sm:py-20 px-6 sm:px-12 text-white">
+    <footer className="bg-secondary-black flex gap-10 justify-between py-8 sm:py-20 px-6 sm:px-12 lg:px-24 text-white">
       <div className="space-y-6">
         <h2 className="text-xl sm:text-3xl font-medium">Get in Touch</h2>
         <p className="text-secondary-gray text-sm sm:text-base">
