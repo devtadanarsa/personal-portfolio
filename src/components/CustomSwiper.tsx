@@ -67,7 +67,7 @@ export default function CustomSlider() {
       </div>
 
       {/* Slides */}
-      <div className="flex items-center justify-center w-full mt-12 sm:mt-0">
+      <div className="flex items-center justify-center w-full mt-0">
         <div className="flex w-full lg:w-[80%] justify-center overflow-hidden space-x-4">
           {slides.map((slide, index) => (
             <div
@@ -81,8 +81,12 @@ export default function CustomSlider() {
               )}`}
               style={{ backgroundColor: "rgba(123, 104, 238, 0.10)" }}
             >
-              <img src={slide.image} alt={slide.content} />
-              <p className="text-lg font-medium text-primary-lavender">
+              <img
+                src={slide.image}
+                alt={slide.content}
+                className="h-20 sm:h-auto"
+              />
+              <p className="text-sm font-medium sm:text-lg text-primary-lavender">
                 {slide.content}
               </p>
             </div>
