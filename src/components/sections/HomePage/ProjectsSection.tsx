@@ -1,5 +1,5 @@
-import { PROJECTS } from "../../constants/projects";
-import ProjectCard from "../ProjectCard";
+import { PROJECTS } from "../../../constants/projects";
+import ProjectCard from "../../ProjectCard";
 
 const ProjectsSection = () => {
   return (

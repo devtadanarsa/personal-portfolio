@@ -18,7 +18,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
 }) => {
   return (
     <div className="flex flex-col w-full gap-5 px-6 py-4 sm:gap-12 sm:py-12 sm:px-16 sm:flex-row bg-third-black">
-      <img src={image} className="h-40 rounded-lg lg:h-80" />
+      <img src={image} className="object-cover h-40 rounded-lg lg:h-80" />
       <div className="flex flex-col justify-between">
         <div>
           <h3 className="flex items-center gap-3 font-medium text-md sm:text-xl lg:block lg:text-2xl">

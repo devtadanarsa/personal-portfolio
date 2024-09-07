@@ -1,4 +1,4 @@
-import CustomSwiper from "../CustomSwiper";
+import CustomSlider from "../../CustomSlider";
 
 const ServicesSection = () => {
   return (
@@ -10,7 +10,7 @@ const ServicesSection = () => {
         Creates Powerful Software That's Oriented Towards Client Needs
       </h2>
 
-      <CustomSwiper />
+      <CustomSlider />
     </section>
   );
 };

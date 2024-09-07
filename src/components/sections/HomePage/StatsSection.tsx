@@ -1,4 +1,4 @@
-import { STATS } from "../../constants/info";
+import { STATS } from "../../../constants/info";
 
 const StatsSection = () => {
   return (
