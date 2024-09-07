@@ -55,7 +55,11 @@ export default function CustomSlider() {
   return (
     <div className="mt-8">
       {/* Dots indicator */}
-      <div className="items-center justify-center hidden w-full sm:flex">
+      <div
+        className="items-center justify-center hidden w-full sm:flex"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
         <div className="flex items-center gap-4 justify-center w-full lg:w-[80%] mb-12">
           {slides.map((_, index) => (
             <div
@@ -67,7 +71,11 @@ export default function CustomSlider() {
       </div>
 
       {/* Slides */}
-      <div className="flex items-center justify-center w-full mt-0">
+      <div
+        className="flex items-center justify-center w-full mt-0"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
         <div className="flex w-full lg:w-[80%] justify-center overflow-hidden space-x-4">
           {slides.map((slide, index) => (
             <div
