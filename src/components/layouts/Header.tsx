@@ -2,8 +2,9 @@ import { useContext, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose, IoMoon, IoSunny } from "react-icons/io5";
 import { Link, useLocation } from "react-router-dom";
-import { NAV_LINKS } from "../../constants/header";
+import { DIGISTAR_LINKS, NAV_LINKS } from "../../constants/header";
 import { ThemeContext } from "../../contexts/ThemeContext";
+import { FaChevronDown } from "react-icons/fa";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -49,6 +50,24 @@ const Header = () => {
               {link.name}
             </Link>
           ))}
+          <div className="relative group">
+            <p className="flex items-center gap-3 cursor-pointer">
+              Digistar <FaChevronDown />
+            </p>
+
+            {/* Dropdown Content */}
+            <div className="absolute flex-col hidden w-full py-4 rounded-lg shadow-lg bg-secondary-white dark:bg-secondary-black group-hover:flex ">
+              {DIGISTAR_LINKS.map((link, index) => (
+                <Link
+                  key={`Digistar - ${index}`}
+                  to={link.href}
+                  className="px-4 py-2 transition-all hover:text-primary-lavender"
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
+          </div>
           <div className="px-4 py-3 border rounded-lg cursor-pointer border-primary-lavender hover:bg-primary-lavender hover:text-primary-white text-primary-lavender">
             <a href="https://wa.me/6281266864907" className="transition-all">
               Contact me
@@ -72,9 +91,9 @@ const Header = () => {
       <div
         className={`${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } fixed right-0 h-screen bg-secondary-white dark:bg-secondary-black pl-12 pr-6 text-end  transform transition-transform duration-300 ease-in-out`}
+        } fixed right-0 h-screen bg-secondary-white dark:bg-secondary-black pl-12 pr-6 text-end  ransform transition-transform duration-300 ease-in-out`}
       >
-        <div className="flex flex-col gap-4 mt-2">
+        <div className="flex flex-col gap-4 mt-2 transition-all duration-1000 dark:text-white">
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <a href="/" className="text-primary-lavender">

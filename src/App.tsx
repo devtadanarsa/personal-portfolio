@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import ThemeProvider from "./contexts/ThemeContext";
+import TeamPage from "./pages/TeamPage";
 
 const App = () => {
   useEffect(() => {
@@ -20,6 +21,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/teams" element={<TeamPage />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
