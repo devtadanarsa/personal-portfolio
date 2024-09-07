@@ -20,9 +20,9 @@ const Header = () => {
     <>
       <header className="sticky top-0 z-[999]">
         <div className="flex items-center justify-between px-6 py-6 font-medium transition-all duration-1000 bg-primary-white dark:text-white dark:bg-secondary-black sm:py-6 lg:py-8 sm:px-12 lg:px-24">
-          <p className="text-lg sm:text-2xl">
+          <Link to="/" className="text-lg sm:text-2xl">
             <span className="text-primary-lavender">Devta</span>Dev
-          </p>
+          </Link>
 
           <div className="flex items-center gap-4 sm:hidden">
             <div
