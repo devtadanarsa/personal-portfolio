@@ -7,7 +7,7 @@ import {
 
 const HeroSection = () => {
   return (
-    <section className="gap-32 mx-2 text-white lg:flex lg:mx-16">
+    <section className="gap-32 mx-2 lg:flex lg:mx-16">
       <div className="space-y-3 sm:space-y-6 lg:w-1/2">
         <h2 className="text-lg font-semibold sm:text-2xl" data-aos="fade-right">
           Hello Guys!
@@ -19,7 +19,7 @@ const HeroSection = () => {
           I am <span className="text-primary-lavender">Devta Danarsa</span>
         </h1>
         <p
-          className="text-sm text-secondary-gray sm:text-lg"
+          className="text-sm text-primary-gray dark:text-secondary-gray sm:text-lg"
           data-aos="fade-right"
         >
           Software Development Enthusiast
@@ -59,17 +59,17 @@ const HeroSection = () => {
         </div>
         {/* END : Image Section Mobile */}
 
-        <div className="pt-4 text-sm sm:text-base">
+        <div className="pt-4 text-sm sm:text-base dark:text-secondary-gray text-primary-gray">
           <hr className="w-3/12 sm:w-1/12" />
           <p
-            className="mt-6 text-justify text-secondary-gray"
+            className="mt-6 text-justify"
             data-aos="fade-up"
             data-aos-delay="300"
           >
             {PROFILE_DESCRIPTION_ONE}
           </p>
           <p
-            className="hidden mt-6 text-justify text-secondary-gray sm:block"
+            className="hidden mt-6 text-justify sm:block"
             data-aos="fade-up"
             data-aos-delay="500"
           >
@@ -80,7 +80,7 @@ const HeroSection = () => {
         <div className="flex items-center gap-6 pt-4 text-sm font-medium lg:pt-12 sm:pt-0 sm:text-base">
           <div data-aos="fade-down" data-aos-delay="900">
             <a
-              className="flex items-center justify-center w-48 gap-3 py-3 transition-all rounded-md bg-primary-lavender hover:scale-105"
+              className="flex items-center justify-center w-48 gap-3 py-3 text-white transition-all rounded-md bg-primary-lavender hover:scale-105"
               href="/CV I Nengah Danarsa Suniadevta.pdf"
               download="CV Devta Danarsa.pdf"
             >
@@ -90,7 +90,7 @@ const HeroSection = () => {
           </div>
           <div data-aos="fade-down" data-aos-delay="1200">
             <a href="https://github.com/devtadanarsa">
-              <button className="w-48 py-3 transition-all border border-white rounded-md hover:scale-105">
+              <button className="w-48 py-3 transition-all border rounded-md border-primary-black dark:border-white hover:scale-105">
                 More
               </button>
             </a>

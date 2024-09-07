@@ -17,7 +17,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
   github,
 }) => {
   return (
-    <div className="flex flex-col w-full gap-5 px-6 py-4 sm:gap-12 sm:py-12 sm:px-16 sm:flex-row bg-third-black">
+    <div className="flex flex-col w-full gap-5 px-6 py-4 sm:gap-12 sm:py-12 sm:px-16 sm:flex-row bg-third-white dark:bg-third-black">
       <img src={image} className="object-cover h-40 rounded-lg lg:h-80" />
       <div className="flex flex-col justify-between">
         <div>
@@ -46,10 +46,16 @@ const ProjectCard: FC<ProjectCardProps> = ({
         </div>
 
         <div className="items-center hidden gap-4 mt-4 text-sm lg:flex lg:gap-12 lg:text-xl lg:mt-auto">
-          <a href={github} className="flex items-center gap-2 font-medium">
+          <a
+            href={github}
+            className="flex items-center gap-2 font-medium hover:underline"
+          >
             Code <FaGithub />
           </a>
-          <a href="/" className="flex items-center gap-2 font-medium">
+          <a
+            href="/"
+            className="flex items-center gap-2 font-medium hover:underline"
+          >
             Live Demo <FaExternalLinkAlt />
           </a>
         </div>

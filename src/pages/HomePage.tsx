@@ -6,18 +6,16 @@ import StatsSection from "../components/sections/HomePage/StatsSection";
 
 const HomePage = () => {
   return (
-    <div>
-      <MainLayout>
-        <div className="px-6 sm:px-12">
-          <HeroSection />
-          <ServicesSection />
-        </div>
-        <StatsSection />
-        <div className="px-6 sm:px-12 lg:px-24">
-          <ProjectsSection />
-        </div>
-      </MainLayout>
-    </div>
+    <MainLayout>
+      <div className="px-6 sm:px-12">
+        <HeroSection />
+        <ServicesSection />
+      </div>
+      <StatsSection />
+      <div className="px-6 sm:px-12 lg:px-24">
+        <ProjectsSection />
+      </div>
+    </MainLayout>
   );
 };
 

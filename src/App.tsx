@@ -4,6 +4,7 @@ import AboutPage from "./pages/AboutPage";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import ThemeProvider from "./contexts/ThemeContext";
 
 const App = () => {
   useEffect(() => {
@@ -14,12 +15,14 @@ const App = () => {
   }, []);
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-      </Routes>
-    </BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 };
 
