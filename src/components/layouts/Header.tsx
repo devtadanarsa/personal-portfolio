@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-[999]">
-      <div className="flex items-center justify-between px-6 py-6 font-medium bg-primary-white dark:text-white dark:bg-secondary-black sm:py-6 lg:py-8 sm:px-12 lg:px-24">
+      <div className="flex items-center justify-between px-6 py-6 font-medium transition-all duration-1000 bg-primary-white dark:text-white dark:bg-secondary-black sm:py-6 lg:py-8 sm:px-12 lg:px-24">
         <p className="text-lg sm:text-2xl">
           <span className="text-primary-lavender">Devta</span>Dev
         </p>
@@ -58,13 +58,13 @@ const Header = () => {
       </div>
 
       <div
-        className="absolute right-0 hidden p-2 mt-8 mr-10 bg-transparent border-2 rounded-full cursor-pointer sm:block bg-transparet border-primary-lavender"
+        className="absolute right-0 hidden p-2 mt-8 mr-10 transition-all duration-300 ease-in-out transform bg-transparent border-2 rounded-full cursor-pointer sm:block border-primary-lavender hover:scale-110 hover:bg-primary-lavender hover:border-transparent group"
         onClick={toggleTheme}
       >
         {theme === "dark" ? (
-          <IoMoon className="text-3xl text-primary-lavender" />
+          <IoMoon className="text-3xl transition-all duration-300 ease-in-out text-primary-lavender group-hover:text-white dark:group-hover:text-black" />
         ) : (
-          <IoSunny className="text-3xl text-primary-lavender" />
+          <IoSunny className="text-3xl transition-all duration-300 ease-in-out text-primary-lavender group-hover:text-white dark:group-hover:text-black" />
         )}
       </div>
 

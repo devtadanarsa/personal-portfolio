@@ -19,7 +19,7 @@ const MainLayout: FC<MainLayoutProps> = ({ children }) => {
   return (
     <div className={theme === "dark" ? "dark" : ""}>
       <Header />
-      <main className="py-8 dark:text-white dark:bg-primary-black sm:py-14 lg:py-20">
+      <main className="py-8 transition-all duration-1000 dark:text-white dark:bg-primary-black sm:py-14 lg:py-20">
         {children}
       </main>
       <Footer />
