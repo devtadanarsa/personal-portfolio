@@ -4,7 +4,7 @@ const ServicesSection = () => {
   return (
     <section className="flex flex-col items-center gap-4 py-32 sm:py-48 sm:gap-6 lg:gap-12">
       <h4
-        className="font-medium text-md sm:text-xl text-secondary-gray"
+        className="font-medium text-md sm:text-xl dark:text-secondary-gray text-primary-gray"
         data-aos="fade-up"
         data-delay="300"
       >

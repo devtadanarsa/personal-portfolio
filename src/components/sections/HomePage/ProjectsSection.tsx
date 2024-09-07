@@ -13,7 +13,7 @@ const ProjectsSection = () => {
 
       <div className="w-full mt-6 space-y-8 sm:mt-20">
         {PROJECTS.map((project, index) => (
-          <div data-aos="fade-up">
+          <div data-aos="fade-up" key={`Project - ${index}`}>
             <ProjectCard key={`Project - ${index}`} {...project} />
           </div>
         ))}

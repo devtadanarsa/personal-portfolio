@@ -10,7 +10,7 @@ const AboutSection = () => {
         </span>
       </h1>
       <div
-        className="p-2 border-white rounded-full border-x"
+        className="p-2 border-black rounded-full dark:border-white border-x"
         data-aos="fade-up"
         data-aos-delay="300"
       >
