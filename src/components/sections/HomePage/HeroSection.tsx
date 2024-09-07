@@ -80,7 +80,7 @@ const HeroSection = () => {
         <div className="flex items-center gap-6 pt-4 text-sm font-medium lg:pt-12 sm:pt-0 sm:text-base">
           <div data-aos="fade-down" data-aos-delay="900">
             <a
-              className="flex items-center justify-center w-48 gap-3 py-3 text-white transition-all rounded-md bg-primary-lavender hover:scale-105"
+              className="flex items-center justify-center gap-2 py-3 text-white transition-all rounded-md sm:gap-3 w-36 sm:w-48 bg-primary-lavender hover:scale-105"
               href="/CV I Nengah Danarsa Suniadevta.pdf"
               download="CV Devta Danarsa.pdf"
             >
@@ -90,7 +90,7 @@ const HeroSection = () => {
           </div>
           <div data-aos="fade-down" data-aos-delay="1200">
             <a href="https://github.com/devtadanarsa">
-              <button className="w-48 py-3 transition-all border rounded-md border-primary-black dark:border-white hover:scale-105">
+              <button className="py-3 transition-all border rounded-md w-36 sm:w-48 border-primary-black dark:border-white hover:scale-105">
                 More
               </button>
             </a>
