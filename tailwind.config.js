@@ -18,7 +18,10 @@ export default {
         'third-black': '#131313',
         'primary-gray': '#707070',
         'secondary-gray': '#999999',
-      }
+      },
+      transitionProperty: {
+        'width': 'width'
+      },
     },
   },
   plugins: [],
