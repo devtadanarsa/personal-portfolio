@@ -10,11 +10,12 @@ import MoviePage from "./pages/MoviePage";
 import ErrorPage from "./pages/ErrorPage";
 import AuthProvider from "./contexts/AuthContext";
 import ProtectedRoute from "./components/ProtectedRoute";
+import ScrollToTop from "./utils/ScrollToTop";
 
 const App = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 500,
       once: true,
     });
   }, []);
@@ -23,6 +24,7 @@ const App = () => {
     <ThemeProvider>
       <AuthProvider>
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />

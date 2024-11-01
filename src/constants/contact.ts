@@ -30,17 +30,21 @@ export const SOCIALS = [
   {
     icon: FaInstagram,
     url: "https://www.instagram.com/devtadanarsa/",
+    colorCode: "#c32aa3",
   },
   {
     icon: FaWhatsapp,
     url: "https://wa.me/6281266864907",
+    colorCode: "#25d366",
   },
   {
     icon: FaLinkedin,
     url: "https://www.linkedin.com/in/i-nengah-danarsa-suniadevta/",
+    colorCode: "#0a66c2",
   },
   {
     icon: FaGithub,
     url: "https://github.com/devtadanarsa",
+    colorCode: "#333",
   },
 ];
