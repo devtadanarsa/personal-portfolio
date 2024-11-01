@@ -2,17 +2,13 @@ import { useContext, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose, IoMoon, IoSunny } from "react-icons/io5";
 import { Link, useLocation } from "react-router-dom";
-import { DIGISTAR_LINKS, NAV_LINKS } from "../../constants/header";
+import { NAV_LINKS } from "../../constants/header";
 import { ThemeContext } from "../../contexts/ThemeContext";
-import { FaChevronDown } from "react-icons/fa";
-import { AuthContext } from "../../contexts/AuthContext";
 
 const Header = () => {
-  const { isAuthenticated, toggleAuth } = useContext(AuthContext);
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
 
   const { pathname } = useLocation();
 
@@ -55,12 +51,11 @@ const Header = () => {
                 {link.name}
               </Link>
             ))}
-            <div className="relative group">
+            {/* <div className="relative group">
               <p className="flex items-center gap-3 cursor-pointer">
                 Digistar <FaChevronDown />
               </p>
 
-              {/* Dropdown Content */}
               <div className="absolute flex-col hidden w-full py-4 rounded-lg shadow-lg bg-secondary-white dark:bg-secondary-black group-hover:flex ">
                 {DIGISTAR_LINKS.map((link, index) => (
                   <Link
@@ -72,11 +67,11 @@ const Header = () => {
                   </Link>
                 ))}
               </div>
-            </div>
+            </div> */}
 
-            <div onClick={toggleAuth} className="cursor-pointer">
+            {/* <div onClick={toggleAuth} className="cursor-pointer">
               {!isAuthenticated ? "Sign In" : "Log Out"}
-            </div>
+            </div> */}
 
             <div className="px-4 py-3 border rounded-lg cursor-pointer border-primary-lavender hover:bg-primary-lavender hover:text-primary-white text-primary-lavender">
               <a href="https://wa.me/6281266864907" className="transition-all">
@@ -106,14 +101,14 @@ const Header = () => {
           <div className="flex flex-col gap-4 mt-2 transition-all duration-1000 dark:text-white">
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
-            <p
+            {/* <p
               className="flex items-center justify-end gap-3"
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
               <FaChevronDown />
               Digistar
-            </p>
-            {DIGISTAR_LINKS.map((link, index) => (
+            </p> */}
+            {/* {DIGISTAR_LINKS.map((link, index) => (
               <Link
                 to={link.href}
                 key={`Link Mob - ${index}`}
@@ -124,7 +119,7 @@ const Header = () => {
             ))}
             <div onClick={toggleAuth} className="cursor-pointer">
               {!isAuthenticated ? "Sign In" : "Log Out"}
-            </div>
+            </div> */}
             <a
               href="https://wa.me/6281266864907"
               className="text-primary-lavender "
