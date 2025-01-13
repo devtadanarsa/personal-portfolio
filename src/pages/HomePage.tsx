@@ -7,7 +7,7 @@ import StatsSection from "../components/sections/HomePage/StatsSection";
 const HomePage = () => {
   return (
     <MainLayout>
-      <div className="px-6 sm:px-12">
+      <div className="px-6 sm:px-12 relative">
         <HeroSection />
         <ServicesSection />
       </div>
