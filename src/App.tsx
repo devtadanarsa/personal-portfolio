@@ -32,10 +32,12 @@ const App = () => {
         // hasBlendMode={true}
         innerStyle={{
           backgroundColor: "#7456FF",
+          zIndex: 1000,
         }}
         outerStyle={{
           mixBlendMode: "exclusion",
           border: "3px solid #7456FF",
+          zIndex: 1000,
         }}
       />
       <ThemeProvider>

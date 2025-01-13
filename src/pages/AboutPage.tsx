@@ -4,7 +4,7 @@ import AboutSection from "../components/sections/AboutPage/AboutSection";
 const AboutPage = () => {
   return (
     <MainLayout>
-      <div className="px-6 sm:px-12 lg:px-24">
+      <div className="px-6 sm:px-12 lg:px-24 relative">
         <AboutSection />
       </div>
     </MainLayout>

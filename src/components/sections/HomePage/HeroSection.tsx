@@ -23,7 +23,7 @@ const HeroSection = () => {
           I am{" "}
           <span className="text-primary-lavender">
             <TypeAnimation
-              sequence={["Devta Danarsa", 1000, "I Nengah Danarsa Suniadevta", 1000]}
+              sequence={["Devta Danarsa", 1000, "Danarsa Suniadevta", 1000]}
               repeat={Infinity}
             />
           </span>
