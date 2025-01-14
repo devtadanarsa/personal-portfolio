@@ -25,7 +25,7 @@ const AboutSection = () => {
         data-aos="fade-up"
         data-aos-delay="600"
       >
-        Website Developer
+        Software Developer | AI Engineer
       </h2>
       <p
         className="max-w-screen-lg text-sm text-center sm:text-md lg:text-base"

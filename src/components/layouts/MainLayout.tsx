@@ -2,6 +2,7 @@ import { FC, ReactNode, useContext } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import { ThemeContext } from "../../contexts/ThemeContext";
+import { ParticlesBackground } from "../Particles";
 
 interface MainLayoutProps {
   children: ReactNode;
@@ -17,7 +18,8 @@ const MainLayout: FC<MainLayoutProps> = ({ children }) => {
   const { theme } = themeContext;
 
   return (
-    <div className={theme === "dark" ? "dark" : ""}>
+    <div className={`${theme === "dark" ? "dark" : ""} relative`}>
+      <ParticlesBackground theme={theme} />
       <Header />
       <main className="py-8 transition-all duration-1000 dark:text-white dark:bg-primary-black sm:py-14 lg:py-20">
         {children}

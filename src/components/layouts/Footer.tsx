@@ -6,7 +6,7 @@ const Footer = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <footer className="flex justify-between gap-10 px-6 py-8 transition-all duration-1000 dark:text-white bg-secondary-white dark:bg-secondary-black sm:py-20 sm:px-12 lg:px-24">
+    <footer className="relative flex justify-between gap-10 px-6 py-8 transition-all duration-1000 dark:text-white bg-secondary-white dark:bg-secondary-black sm:py-20 sm:px-12 lg:px-24">
       <div className="space-y-6">
         <h2 className="text-xl font-medium sm:text-3xl">Get in Touch</h2>
         <p className="text-sm text-secondary-gray sm:text-base">
@@ -28,15 +28,9 @@ const Footer = () => {
         </div>
       </div>
       {theme === "dark" ? (
-        <img
-          src="/footer-vector.png"
-          className="object-cover overflow-hidden"
-        />
+        <img src="/footer-vector.png" className="object-cover overflow-hidden" />
       ) : (
-        <img
-          src="/footer-vector-light.png"
-          className="object-cover overflow-hidden"
-        />
+        <img src="/footer-vector-light.png" className="object-cover overflow-hidden" />
       )}
     </footer>
   );
