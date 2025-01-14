@@ -36,6 +36,7 @@ export const careerTimeline = [
     company: "Bangkit Academy by Google",
     description: `Learn the key concepts and applications of AI to solve a wide range of Machine Learning problems 
     such as: regression, classification, NLP, and GenAI.`,
+    year: 2024,
   },
   {
     title: "Jan - May 2024",
@@ -43,6 +44,14 @@ export const careerTimeline = [
     company: "Djitugo",
     description: `Developed business websites for clients using WordPress and Shopify, 
     implementing custom features and enhancements with CSS, JavaScript, Liquid Template Language, and jQuery.`,
+    year: 2024,
+  },
+  {
+    title: "Oct 2023 - May 2024",
+    position: "Practicum Assistant",
+    company: "Teknologi Informasi, Universitas Udayana",
+    description: `Being mentor to first year student towards their algorithm and programming practicum and database concept practicum.`,
+    year: 2023,
   },
 ];
 
