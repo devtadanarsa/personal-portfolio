@@ -51,27 +51,6 @@ const Header = () => {
                 {link.name}
               </Link>
             ))}
-            {/* <div className="relative group">
-              <p className="flex items-center gap-3 cursor-pointer">
-                Digistar <FaChevronDown />
-              </p>
-
-              <div className="absolute flex-col hidden w-full py-4 rounded-lg shadow-lg bg-secondary-white dark:bg-secondary-black group-hover:flex ">
-                {DIGISTAR_LINKS.map((link, index) => (
-                  <Link
-                    key={`Digistar - ${index}`}
-                    to={link.href}
-                    className="px-4 py-2 transition-all hover:text-primary-lavender"
-                  >
-                    {link.name}
-                  </Link>
-                ))}
-              </div>
-            </div> */}
-
-            {/* <div onClick={toggleAuth} className="cursor-pointer">
-              {!isAuthenticated ? "Sign In" : "Log Out"}
-            </div> */}
 
             <div className="px-4 py-3 border rounded-lg cursor-pointer border-primary-lavender hover:bg-primary-lavender hover:text-primary-white text-primary-lavender">
               <a href="https://wa.me/6281266864907" className="transition-all">
@@ -96,34 +75,12 @@ const Header = () => {
         <div
           className={`${
             isMenuOpen ? "translate-x-0" : "translate-x-full"
-          } fixed right-0 h-screen bg-secondary-white dark:bg-secondary-black pl-12 pr-6 text-end  ransform transition-transform duration-300 ease-in-out`}
+          } absolute right-0 h-screen bg-secondary-white dark:bg-secondary-black pl-12 pr-6 text-end  ransform transition-transform duration-300 ease-in-out`}
         >
           <div className="flex flex-col gap-4 mt-2 transition-all duration-1000 dark:text-white">
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
-            {/* <p
-              className="flex items-center justify-end gap-3"
-              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-            >
-              <FaChevronDown />
-              Digistar
-            </p> */}
-            {/* {DIGISTAR_LINKS.map((link, index) => (
-              <Link
-                to={link.href}
-                key={`Link Mob - ${index}`}
-                className={isDropdownOpen ? "block" : "hidden"}
-              >
-                {link.name}
-              </Link>
-            ))}
-            <div onClick={toggleAuth} className="cursor-pointer">
-              {!isAuthenticated ? "Sign In" : "Log Out"}
-            </div> */}
-            <a
-              href="https://wa.me/6281266864907"
-              className="text-primary-lavender "
-            >
+            <a href="https://wa.me/6281266864907" className="text-primary-lavender ">
               Contact me
             </a>
           </div>

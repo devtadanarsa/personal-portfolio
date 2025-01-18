@@ -16,16 +16,19 @@ const HeroSection = () => {
           Hi Folks!
         </h2>
         <h1
-          className="text-3xl font-semibold sm:text-5xl"
+          className="text-2xl font-semibold sm:text-5xl"
           data-aos="fade-right"
           data-aos-duration={1000}
         >
           I am{" "}
-          <span className="text-primary-lavender">
+          <span className="text-primary-lavender hidden sm:inline">
             <TypeAnimation
               sequence={["Devta Danarsa", 1000, "Danarsa Suniadevta", 1000]}
               repeat={Infinity}
             />
+          </span>
+          <span className="text-primary-lavender sm:hidden">
+            <TypeAnimation sequence={["Devta Danarsa", 1000, "DevtaDev", 1000]} repeat={Infinity} />
           </span>
         </h1>
         <p

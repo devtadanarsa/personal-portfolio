@@ -2,8 +2,8 @@ import { Chrono } from "react-chrono";
 import { careerTimeline } from "../../../constants/info";
 
 const TimelineSection = () => {
-  const customContent = careerTimeline.map((item) => (
-    <div className="w-full h-full lg:py-2 flex flex-col justify-center">
+  const customContent = careerTimeline.map((item, index) => (
+    <div className="w-full h-full lg:py-2 flex flex-col justify-center" key={item.company + index}>
       <h3 className="text-sm sm:text-md lg:text-xl font-semibold text-primary-lavender">
         {item.position}
       </h3>

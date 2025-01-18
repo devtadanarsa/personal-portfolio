@@ -1,6 +1,6 @@
 import { FC, useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { type Container, type ISourceOptions, MoveDirection, OutMode } from "@tsparticles/engine";
+import { type ISourceOptions, MoveDirection, OutMode } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 
 interface ParticlesBackgroundProps {
@@ -17,10 +17,6 @@ export const ParticlesBackground: FC<ParticlesBackgroundProps> = ({ theme }) => 
       setInit(true);
     });
   }, []);
-
-  const particlesLoaded = async (container?: Container): Promise<void> => {
-    console.log(container);
-  };
 
   const options: ISourceOptions = useMemo(
     () => ({
@@ -94,14 +90,7 @@ export const ParticlesBackground: FC<ParticlesBackgroundProps> = ({ theme }) => 
   );
 
   if (init) {
-    return (
-      <Particles
-        id="tsparticles"
-        particlesLoaded={particlesLoaded}
-        options={options}
-        className="absolute inset-0 z-0"
-      />
-    );
+    return <Particles id="tsparticles" options={options} className="absolute inset-0 z-0" />;
   }
 
   return <></>;
