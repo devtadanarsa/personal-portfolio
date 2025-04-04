@@ -4,8 +4,11 @@ import ProjectCard from "../../ProjectCard";
 
 const ProjectsSection = () => {
   return (
-    <div className="flex flex-col items-center pt-20 sm:pt-40 fade-up">
-      <h2 className="text-xl font-medium sm:text-3xl lg:text-4xl" data-aos="fade-up">
+    <div className="flex flex-col items-center pt-20 sm:pt-40 fade-up relative">
+      <h2
+        className="text-xl font-medium sm:text-3xl lg:text-4xl"
+        data-aos="fade-up"
+      >
         Latest Projects
       </h2>
 

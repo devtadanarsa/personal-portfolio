@@ -1,9 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
-import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 import ThemeProvider from "./contexts/ThemeContext";
 import TeamPage from "./pages/TeamPage";
 import MoviePage from "./pages/MoviePage";
@@ -12,16 +10,9 @@ import AuthProvider from "./contexts/AuthContext";
 import ProtectedRoute from "./components/ProtectedRoute";
 import ScrollToTop from "./utils/ScrollToTop";
 import AnimatedCursor from "react-animated-cursor";
+import AOSInitializer from "./utils/AOSInitializer";
 
 const App = () => {
-  useEffect(() => {
-    AOS.init({
-      disable: "mobile",
-      duration: 500,
-      once: true,
-    });
-  }, []);
-
   return (
     <>
       <AnimatedCursor
@@ -45,6 +36,7 @@ const App = () => {
         <AuthProvider>
           <BrowserRouter>
             <ScrollToTop />
+            <AOSInitializer />
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />

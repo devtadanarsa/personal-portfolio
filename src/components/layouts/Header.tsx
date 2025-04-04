@@ -75,12 +75,15 @@ const Header = () => {
         <div
           className={`${
             isMenuOpen ? "translate-x-0" : "translate-x-full"
-          } absolute right-0 h-screen bg-secondary-white dark:bg-secondary-black pl-12 pr-6 text-end  ransform transition-transform duration-300 ease-in-out`}
+          } absolute right-0 h-screen bg-secondary-white dark:bg-secondary-black pl-12 pr-6 text-end transform transition-transform duration-300 ease-in-out`}
         >
           <div className="flex flex-col gap-4 mt-2 transition-all duration-1000 dark:text-white">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <a href="https://wa.me/6281266864907" className="text-primary-lavender ">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a
+              href="https://wa.me/6281266864907"
+              className="text-primary-lavender "
+            >
               Contact me
             </a>
           </div>
