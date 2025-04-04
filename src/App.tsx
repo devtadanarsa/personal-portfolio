@@ -16,6 +16,7 @@ import AnimatedCursor from "react-animated-cursor";
 const App = () => {
   useEffect(() => {
     AOS.init({
+      disable: "mobile",
       duration: 500,
       once: true,
     });
@@ -63,7 +64,10 @@ const App = () => {
                   </ProtectedRoute>
                 }
               />
-              <Route path="/access-error" element={<ErrorPage errorCode={401} />} />
+              <Route
+                path="/access-error"
+                element={<ErrorPage errorCode={401} />}
+              />
               <Route path="*" element={<ErrorPage errorCode={404} />} />
             </Routes>
           </BrowserRouter>

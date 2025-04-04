@@ -2,28 +2,24 @@ import { useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 const slides = [
-  { id: 1, content: "Website Development", image: "/services/web-dev.png" },
+  { id: 1, content: "AI and Chatbots Development", image: "/services/mobile-app.png" },
   {
     id: 2,
-    content: "Mobile App Development",
-    image: "/services/mobile-app.png",
+    content: "Website and Mobile App Development",
+    image: "/services/web-dev.png",
   },
-  { id: 3, content: "System Design", image: "/services/system-design.png" },
+  { id: 3, content: "Data Engineering and Analysis", image: "/services/system-design.png" },
 ];
 
 export default function CustomSlider() {
   const [currentIndex, setCurrentIndex] = useState<number>(1);
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? slides.length - 1 : prevIndex - 1
-    );
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? slides.length - 1 : prevIndex - 1));
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === slides.length - 1 ? 0 : prevIndex + 1
-    );
+    setCurrentIndex((prevIndex) => (prevIndex === slides.length - 1 ? 0 : prevIndex + 1));
   };
 
   const getSlideClass = (index: number) => {
@@ -62,10 +58,7 @@ export default function CustomSlider() {
       >
         <div className="flex items-center gap-4 justify-center w-full lg:w-[80%] mb-12">
           {slides.map((_, index) => (
-            <div
-              key={index}
-              className={`w-1/3 h-2 ${getSlideColor(index)} rounded-lg`}
-            ></div>
+            <div key={index} className={`w-1/3 h-2 ${getSlideColor(index)} rounded-lg`}></div>
           ))}
         </div>
       </div>
@@ -81,19 +74,11 @@ export default function CustomSlider() {
             <div
               key={slide.id}
               className={`flex flex-col items-center gap-4 transform transition-all duration-500 ease-in-out rounded-lg ${
-                index === currentIndex
-                  ? "w-full md:w-1/3"
-                  : "hidden md:flex md:w-1/3"
-              } text-white text-center py-12 px-14 lg:px-20 ${getSlideClass(
-                index
-              )}`}
+                index === currentIndex ? "w-full md:w-1/3" : "hidden md:flex md:w-1/3"
+              } text-white text-center py-12 px-14 lg:px-20 ${getSlideClass(index)}`}
               style={{ backgroundColor: "rgba(123, 104, 238, 0.10)" }}
             >
-              <img
-                src={slide.image}
-                alt={slide.content}
-                className="h-20 sm:h-auto"
-              />
+              <img src={slide.image} alt={slide.content} className="h-20 sm:h-auto" />
               <p className="text-sm font-medium sm:text-lg text-primary-lavender">
                 {slide.content}
               </p>
@@ -108,9 +93,7 @@ export default function CustomSlider() {
         {slides.map((_, index) => (
           <div
             key={index}
-            className={`w-20 h-2 ${
-              getSlideColor(index) ?? "bg-secondary-gray"
-            } rounded-lg`}
+            className={`w-20 h-2 ${getSlideColor(index) ?? "bg-secondary-gray"} rounded-lg`}
           ></div>
         ))}
         <FaAngleRight onClick={handleNext} className="text-xl cursor-pointer" />

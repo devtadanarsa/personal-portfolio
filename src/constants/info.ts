@@ -31,6 +31,13 @@ export const STATS = [
 
 export const careerTimeline = [
   {
+    title: "Feb - Apr 2025",
+    position: "Software Engineer Intern",
+    company: "Mitrais",
+    description: `Developing web-based applications using Next.js and Nest.js, and integrating them with Large Language Models (LLMs).`,
+    year: 2025,
+  },
+  {
     title: "Sep - Dec 2024",
     position: "Machine Learning Cohort",
     company: "Bangkit Academy by Google",
@@ -40,7 +47,7 @@ export const careerTimeline = [
   },
   {
     title: "Jan - May 2024",
-    position: "Web Developer",
+    position: "Web Developer Intern",
     company: "Djitugo",
     description: `Developed business websites for clients using WordPress and Shopify, 
     implementing custom features and enhancements with CSS, JavaScript, Liquid Template Language, and jQuery.`,
