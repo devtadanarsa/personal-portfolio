@@ -21,7 +21,7 @@ export const CONTACTS = [
   },
   {
     title: "Address",
-    value: "Jl. Sekar Sari 99, Denpasar, Bali",
+    value: "Denpasar, Bali",
     icon: FaLocationArrow,
   },
 ];
